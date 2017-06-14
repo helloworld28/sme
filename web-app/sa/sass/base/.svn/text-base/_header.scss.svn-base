@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.o-header{
+    line-height: 50px;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1.732px 3px 0px rgba(6, 0, 1, 0.12);
+    z-index: 999;
+    user-select: none;
+    @include webkitbox(1);
+    .nav-button{
+        @include flex(1);
+        display: block;
+        line-height: 44px;
+        text-align: center;
+        transition: background 300ms ease;
+    }
+    .nav-home{
+        &:after{
+            content: " ";
+            display: inline-block;
+            width: 24px;
+            height: 22px;
+            position: relative;
+            top: 9px;
+            background: url(../img/icon-nav-home.png?__sprite) no-repeat;
+        }
+        &.active{
+            background: #e8e8e8;
+        }
+        &.current:after{
+            background: url(../img/icon-nav-home-touch.png?__sprite) no-repeat;
+        }
+    }
+    .nav-user{
+        &:after{
+            content: " ";
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            top: 9px;
+            position: relative;
+            background: url(../img/icon-nav-user.png?__sprite) no-repeat;
+        }
+        &.active{
+            background: #e8e8e8;
+        }
+        &.current:after{
+            background: url(../img/icon-nav-user-touch.png?__sprite) no-repeat;
+        }
+    }
+    .nav-favor{
+        &:after{
+            content: " ";
+            display: inline-block;
+            width: 26px;
+            height: 23px;
+            position: relative;
+            top: 10px;
+            background: url(../img/icon-nav-favor.png?__sprite) no-repeat;
+        }
+        &.active{
+            background: #e8e8e8;
+        }
+        &.current:after{
+            background: url(../img/icon-nav-favor-touch.png?__sprite) no-repeat;
+        }
+    }
+    .nav-cart{
+        &:after{
+            content: " ";
+            display: inline-block;
+            width: 23px;
+            height: 24px;
+            position: relative;
+            top: 9px;
+            background: url(../img/icon-nav-cart.png?__sprite) no-repeat;
+        }
+        &.active{
+            background: #e8e8e8;
+        }
+        &.current:after{
+            background: url(../img/icon-nav-cart-touch.png?__sprite) no-repeat;
+        }
+    }
+}

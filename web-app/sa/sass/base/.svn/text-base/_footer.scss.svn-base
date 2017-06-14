@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.o-footer{
+
+}
+
+.o-copyright{
+    line-height: 50px;
+    text-align: center;
+    background-color: #2d2d2d;
+    color: #999;
+    font-size: 14px;
+}

@@ -1,0 +1,13 @@
+
+.li_ul_history{
+	margin-left:0px;
+	padding-left:0px;
+}
+.li_ul_history li{
+	list-style:none;
+}
+.li_small{
+	color:#989797;
+	font-size:13px;
+	margin-top:8px;
+}
